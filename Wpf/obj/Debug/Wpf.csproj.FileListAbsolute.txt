@@ -1,0 +1,109 @@
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.csprojResolveAssemblyReference.cache
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Login.g.cs
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\App.g.cs
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf_MarkupCompile.cache
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf_MarkupCompile.lref
+D:\软件开发与设计I\Wpf\Wpf\bin\Debug\Wpf.exe.config
+D:\软件开发与设计I\Wpf\Wpf\bin\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf\Wpf\bin\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Login.baml
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.g.resources
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.Properties.Resources.resources
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.csproj.GenerateResource.Cache
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.csproj.CoreCompileInputs.cache
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\register.g.cs
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\register.baml
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\Wpf.csproj.ResolveComReference.cache
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\MainWindow.baml
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\StyleResource.baml
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\App.baml
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\MainWindow.g.cs
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\txtLook.g.cs
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\txtLook.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\bin\Debug\Wpf.exe.config
+D:\软件开发与设计I\Wpf - 副本\Wpf\bin\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf - 副本\Wpf\bin\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.csprojResolveAssemblyReference.cache
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.csproj.ResolveComReference.cache
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\StyleResource.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\App.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Login.g.cs
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\MainWindow.g.cs
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\register.g.cs
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\txtLook.g.cs
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\App.g.cs
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf_MarkupCompile.cache
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf_MarkupCompile.lref
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Login.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\MainWindow.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\register.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\txtLook.baml
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.g.resources
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.Properties.Resources.resources
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.csproj.GenerateResource.Cache
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.csproj.CoreCompileInputs.cache
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf - 副本\Wpf\obj\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\bin\Debug\Wpf.exe.config
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\bin\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\bin\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.csprojResolveAssemblyReference.cache
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.csproj.ResolveComReference.cache
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\StyleResource.baml
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\App.baml
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Login.g.cs
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\MainWindow.g.cs
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\register.g.cs
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\txtLook.g.cs
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\App.g.cs
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf_MarkupCompile.cache
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf_MarkupCompile.lref
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Login.baml
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\MainWindow.baml
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\register.baml
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\txtLook.baml
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.g.resources
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.Properties.Resources.resources
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.csproj.GenerateResource.Cache
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.csproj.CoreCompileInputs.cache
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf - 副本 - 副本\Wpf\obj\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\ZJ.g.cs
+D:\软件开发与设计I\Wpf\Wpf\obj\Debug\ZJ.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\bin\Debug\Wpf.exe.config
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\bin\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\bin\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.csprojResolveAssemblyReference.cache
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.csproj.ResolveComReference.cache
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\StyleResource.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\App.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Login.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\MainWindow.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\register.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\txtLook.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\ZJIN.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\ZJ.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\App.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf_MarkupCompile.cache
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf_MarkupCompile.lref
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Login.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\MainWindow.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\register.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\txtLook.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\ZJ.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\ZJIN.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.g.resources
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.Properties.Resources.resources
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.csproj.GenerateResource.Cache
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.csproj.CoreCompileInputs.cache
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.exe
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\Wpf.pdb
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\TJZJ.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\TJZJ.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\WZIN.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\WZIN.baml
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\WZTJ.g.cs
+D:\软件开发与设计I\Wpf\OrganizationManagementSystem\Wpf\obj\Debug\WZTJ.baml

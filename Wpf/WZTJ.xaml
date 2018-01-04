@@ -1,0 +1,18 @@
+﻿<Window x:Class="Wpf.WZTJ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="WZTJ" Height="400" Width="300">
+    <Canvas >
+        <TextBlock Text="名称：" FontSize="18" Canvas.Left="29" Canvas.Top="47" Height="33" Width="63"/>
+        <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Canvas.Left="111" Height="34" Width="130" Canvas.Top="46" Name="name"></TextBox>
+        <TextBlock Text="数量：" FontSize="18" Canvas.Left="29" Canvas.Top="106" Height="33" Width="63"/>
+        <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Canvas.Left="111" Height="34" Width="130" Canvas.Top="106" Name="num"></TextBox>
+        <TextBlock Text="备注：" FontSize="18" Canvas.Left="29" Canvas.Top="169" Height="33" Width="63"/>
+        <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Canvas.Left="111" Height="129" Width="130" Canvas.Top="169" Name="detail"></TextBox>
+        <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="提交" FontSize="18" Canvas.Left="111" Canvas.Top="314" Height="33" Width="79" Click="Button_Click"/>
+    </Canvas>
+</Window>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="Wpf.TJZJ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="TJZJ" Height="500" Width="800">
+    <Grid>
+        <DatePicker Width="119" HorizontalAlignment="Left" local:DatePickerCalendar.IsMonthYear="True" Canvas.Left="30" Canvas.Top="55" Name="ZJ" Margin="10,33,0,408.4"/>
+        <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="导出该月" HorizontalAlignment="Left" Canvas.Left="107" Canvas.Top="116" Width="80" Click="Button_Click" Margin="27,80,0,355.4"/>
+        <DatePicker Width="119" HorizontalAlignment="Left" local:DatePickerCalendar.IsYear="True" Canvas.Left="30" Canvas.Top="173" Name="ZJ_year" Margin="10,144,0,297.4"/>
+        <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="统计该年" HorizontalAlignment="Left" Canvas.Left="107" Canvas.Top="240" Width="80" Click="Button_Click_1" Margin="27,197,0,233.4"/>
+        <Grid Name="Simon">
+        </Grid>
+    </Grid>
+</Window>

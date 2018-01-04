@@ -1,0 +1,35 @@
+F:\u3d\TCP\TCP\obj\Debug\MainWindow.baml
+F:\u3d\TCP\TCP\obj\Debug\MainWindow.g.cs
+F:\u3d\TCP\TCP\obj\Debug\App.g.cs
+F:\u3d\TCP\TCP\obj\Debug\TCP_MarkupCompile.cache
+F:\u3d\TCP\TCP\obj\Debug\TCP.g.resources
+F:\u3d\TCP\TCP\obj\Debug\TCP.Properties.Resources.resources
+F:\u3d\TCP\TCP\obj\Debug\TCP.csproj.GenerateResource.Cache
+F:\u3d\TCP\TCP\bin\Debug\TCP.exe
+F:\u3d\TCP\TCP\bin\Debug\TCP.pdb
+F:\u3d\TCP\TCP\obj\Debug\TCP.exe
+F:\u3d\TCP\TCP\obj\Debug\TCP.pdb
+G:\u3d\TCP\TCP\obj\Debug\TCP.exe
+G:\u3d\TCP\TCP\obj\Debug\TCP.pdb
+G:\u3d\TCP\TCP\bin\Debug\TCP.exe
+G:\u3d\TCP\TCP\bin\Debug\TCP.pdb
+G:\u3d\TCP\TCP\obj\Debug\MainWindow.baml
+G:\u3d\TCP\TCP\obj\Debug\MainWindow.g.cs
+G:\u3d\TCP\TCP\obj\Debug\App.g.cs
+G:\u3d\TCP\TCP\obj\Debug\TCP_MarkupCompile.cache
+G:\u3d\TCP\TCP\obj\Debug\TCP.g.resources
+G:\u3d\TCP\TCP\obj\Debug\TCP.Properties.Resources.resources
+G:\u3d\TCP\TCP\obj\Debug\TCP.csproj.GenerateResource.Cache
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\bin\Debug\TCP.exe
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\bin\Debug\TCP.pdb
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.csprojResolveAssemblyReference.cache
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\MainWindow.baml
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\MainWindow.g.cs
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\App.g.cs
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP_MarkupCompile.cache
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.g.resources
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.Properties.Resources.resources
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.csproj.GenerateResource.Cache
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.csproj.CoreCompileInputs.cache
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.exe
+D:\软件开发与设计I\TCP - 副本 (2)\TCP\obj\Debug\TCP.pdb

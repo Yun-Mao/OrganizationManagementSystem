@@ -1,0 +1,385 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:WMControl="clr-namespace:WMControl;assembly=WMControl" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:l="clr-namespace:Wpf"
+    xmlns:l1="clr-namespace:main" mc:Ignorable="d" x:Name="window" x:Class="main.MainWindow"
+        Title="MainWindow" Height="610" Width="910" Style="{DynamicResource NoResize_window}" MinWidth="860" MinHeight="610" MouseLeftButtonDown="window_MouseLeftButtonDown" Background="{Binding Background, ElementName=skinbrush}" SnapsToDevicePixels="True" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <FrameworkElement x:Key="ProxyElement" DataContext="{Binding}"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Skin/Bd/background_mainwnd.png"/>
+        </Grid.Background>
+        <WMControl:WMTabControl Grid.Row="1" BorderBrush="{x:Null}" BorderThickness="0">
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Margin="10,0,0,0" Header="主界面">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="Skin/Icon/ico_Examine.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Canvas>
+
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="776" Canvas.Top="173" Height="32" Name="CXWDXX" Width="94" Click="CXWDXX_Click"  >查询未读消息</Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="776" Canvas.Top="232" Height="32"  Width="94" Click="Button_Click_10">标记已读</Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="776" Canvas.Top="290" Height="32"  Width="94" Click="Button_Click_11">查询所有消息</Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="776" Canvas.Top="350" Height="32"  Width="94" Click="Button_Click_12">删除</Button>
+                    <Border Canvas.Left="776" Canvas.Top="22" Height="88" Width="94" CornerRadius="5" BorderBrush="Gray" BorderThickness="1">
+                        <Border.Background>
+                            <ImageBrush x:Name="Image1" />
+                        </Border.Background>
+                    </Border>
+                    <ListView x:Name="listView_first" Width="706" Height="427"  ItemsSource="{Binding}" Canvas.Left="37" Canvas.Top="22" MouseDoubleClick="ListView2_MouseDoubleClick">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="状态" Width="50" DisplayMemberBinding="{Binding Path=State}"/>
+                                <GridViewColumn Header="来信" Width="100" DisplayMemberBinding="{Binding Path=Fromuser}"/>
+                                <GridViewColumn Header="时间" Width="200" DisplayMemberBinding="{Binding Path=Time}"/>
+                                <GridViewColumn Header="内容" Width="350" DisplayMemberBinding="{Binding Path=Text}"/>
+
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Canvas>
+            </WMControl:WMTabItem>
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Header="物资管理&#xD;&#xA;">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="/Skin/Icon/ico_dsmain.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Canvas>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查询自己记录" Canvas.Left="566" Canvas.Top="61" Height="32" Width="86" Click="Button_Click_25"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查询所有记录" Canvas.Left="328" Canvas.Top="60" Height="30" Width="86" Click="Button_Click_22"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查询自己已借" Canvas.Left="32" Canvas.Top="13" Height="32" Width="86" Click="Button_Click_20"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="申请选中物资" Canvas.Left="188" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_15" Name="SQXZWZ" Visibility="Collapsed"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查看申请" Canvas.Left="744" Canvas.Top="13" Height="32" Width="86" Click="Button_Click_16" Name="CKSQ"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查询所有已借" Canvas.Left="446" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_19" ></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查询物资" Canvas.Left="32" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_14"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Name="DCWZ" Content="导出物资" Canvas.Left="387" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_28" ></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="添加新种类物资" Canvas.Left="732" Canvas.Top="61" Height="32" Width="98" Click="Button_Click_26" Name="TJnewWZ"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="驳回" Canvas.Left="32" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_17" Name="BH2"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="同意" Canvas.Left="204" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_18" Name="TY2"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="归还选中物资" Canvas.Left="188" Canvas.Top="13" Height="32" Width="86" Click="Button_Click_21" Name="GHXZWZ" Visibility="Collapsed"></Button>
+                    <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Text="请填写驳回的理由：" Canvas.Left="32" Canvas.Top="393" Height="31" Width="809" Name="BHLY1"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="修改选中物资" Canvas.Left="621" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_23" Name="XGWZ" Visibility="Collapsed"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="删除选中物资" Canvas.Left="755" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_24" Name="SCWZ" Visibility="Collapsed"></Button>
+                    <DataGrid x:Name="dataGrid_Demo2"  Grid.Row="2" Grid.Column="0" IsReadOnly="True"
+                              SelectedIndex="-1" AlternationCount="2" AlternatingRowBackground="AliceBlue"  
+                              ItemsSource="{Binding Collection}"  
+                              FrozenColumnCount="1"
+                              ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle}" 
+                              VerticalGridLinesBrush="#FFDEDEDE" HorizontalGridLinesBrush="#FFDEDEDE" 
+                              BorderBrush="#FF688CAF" Foreground="Black" RowHeight="28" RowHeaderWidth="24" 
+                              AutoGenerateColumns="False"   ColumnHeaderHeight="32" HeadersVisibility="Column"
+                            PreviewMouseLeftButtonUp="dataGrid2_PreviewMouseLeftButtonUp" Canvas.Left="32" Canvas.Top="114" Height="258" Width="809" 
+                              >
+                        <DataGrid.Resources>
+                            <Style x:Key="ColumnHeaderGripperStyle" TargetType="{x:Type Thumb}">
+                                <Setter Property="Width" Value="8"/>
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Cursor" Value="SizeWE"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Thumb}">
+                                            <Border Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}"/>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                            <Style x:Key="DataGridColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource ContrastBrush}"/>
+
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn  >
+                                <DataGridTemplateColumn.Header  >
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition  />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="40" />
+                                        </Grid.ColumnDefinitions>
+                                        <CheckBox Grid.Row="0" Grid.Column="0" x:Name="CheckBox_AllSelect2"  Click="CheckBox2_All_SelectClick"  HorizontalAlignment="Center"></CheckBox>
+                                    </Grid>
+                                </DataGridTemplateColumn.Header>
+
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition  />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="40" />
+                                            </Grid.ColumnDefinitions>
+                                            <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{Binding Selected}"   Click="CheckBox2_Click"  HorizontalAlignment="Center">
+                                            </CheckBox>
+                                        </Grid>
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding Name}" Header="物资名称"   Width="100"   />
+                            <DataGridTextColumn Binding="{Binding Num}" Header="总数或借数"   Width="80"   />
+                            <DataGridTextColumn Binding="{Binding Remain}" Header="剩余数目"   Width="80"/>
+                            <DataGridTextColumn Binding="{Binding Touser}" Header="借用户"   Width="100"   />
+                            <DataGridTextColumn Binding="{Binding Time}" Header="借时间"   Width="100"   />
+                            <DataGridTextColumn Binding="{Binding GTime}" Header="归还时间"   Width="100"   />
+                            <DataGridTextColumn Binding="{Binding State}" Header="状态"   Width="100"   />
+                            <DataGridTextColumn Binding="{Binding Detail}" Header="备注"   Width="200"   />
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Canvas>
+            </WMControl:WMTabItem>
+
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Header="工作通讯">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="/Skin/Icon/ico_VulRepair.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Canvas>
+                    <RichTextBox Background="Azure"  Name="richTextBoxMain" Height="376"  Width="483" Canvas.Left="190" Canvas.Top="13" IsReadOnly="True"/>
+                    <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Canvas.Left="12" Canvas.Top="401" Height="68" Name="textBoxSend" Width="661" RenderTransformOrigin="0.5,0.5"></TextBox>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="739" Canvas.Top="13" Height="49"  Name="KQQHY" Width="101" Click="buttonStart2_Click" >开启群会议</Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="739" Canvas.Top="83" Height="49"  Name="JSQHY" Width="101" Click="buttonEnd2_Click" Visibility="Collapsed">结束群会议</Button>
+                    <ListBox Canvas.Left="12" Canvas.Top="13" Height="376" Name="ListBoxSend" Width="163" DisplayMemberPath="Name" SelectedValuePath="IP" ItemsSource="{Binding}"/>
+                    <TextBox Canvas.Left="739" Canvas.Top="324" Height="30" Name="IP" Width="101" Text="127.0.0.1"></TextBox>
+                    <TextBox Canvas.Left="739" Canvas.Top="267" Height="31" Name="DK" Width="101" Text="2020"></TextBox>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="739" Canvas.Top="13" Height="52"  Width="101" Name="buttonStart3" Click="buttonStart3_Click" Content="链接通讯"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="739" Canvas.Top="137" Height="47"  Width="101" Name="buttonEnd3" Click="buttonEnd3_Click" Content="停止通讯" Visibility="Collapsed"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Height="23"  Width="101" Click="button1_file" Content="点击上传文件" Canvas.Left="739" Canvas.Top="401" Name="filesend"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="739" Canvas.Top="442" Height="27" x:Name="buttonSend" Width="101" Click="buttonSend_Click" Content="发送" RenderTransformOrigin="0.491,0.496"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Canvas.Left="739" Canvas.Top="419" Height="28" x:Name="buttonSend2" Width="101" Click="buttonSend2_Click" Content="发送（admin）" RenderTransformOrigin="0.491,0.496"/>
+                    <RadioButton Content="私发模式" Canvas.Left="739" Canvas.Top="219" Height="23" Width="101" GroupName="sendway" Name="SF"/>
+                    <RadioButton Content="群发模式" Canvas.Left="739" Canvas.Top="239" Height="23" Width="101" GroupName="sendway" Name="QF"/>
+                </Canvas>
+            </WMControl:WMTabItem>
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Header="资金系统">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="/Skin/Icon/ico_SysRepair.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Canvas>
+                    <TextBlock Text="资金余额：" Foreground="Black" Height="21" Width="64" Canvas.Left="32" Canvas.Top="23"></TextBlock>
+                    <TextBlock Foreground="Black" Height="21" Width="64" Canvas.Left="101" Canvas.Top="23" Name="yu_e"></TextBlock>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="申请资金" Canvas.Left="32" Canvas.Top="60" Height="32" Width="87" Click="Button_Click_1">
+                    </Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查看申请" Canvas.Left="204" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_2" Name="CKSQ2"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="统计资金" Canvas.Left="386" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_13" Name="TJZJ"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="查看资金" Canvas.Left="755" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_5"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="添加资金" Canvas.Left="568" Canvas.Top="60" Height="32" Width="86" Click="Button_Click_6" Name="TIANJZJ"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="驳回" Canvas.Left="32" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_3" Name="bh"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="同意" Canvas.Left="204" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_4" Name="ty"></Button>
+                    <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Text="请填写驳回的理由：" Canvas.Left="32" Canvas.Top="393" Height="31" Width="809" Name="BHLY"/>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="删除" Canvas.Left="386" Canvas.Top="436" Height="32" Width="86" Click="Button_Click_7" Name="sc"></Button>
+                    <ListView x:Name="listView_4" Width="809" Height="269"  ItemsSource="{Binding}" Canvas.Left="32" Canvas.Top="110" MouseDoubleClick="ListView_MouseDoubleClick">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="金额" Width="100" DisplayMemberBinding="{Binding Path=Money}"/>
+                                <GridViewColumn Header="性质" Width="100" DisplayMemberBinding="{Binding Path=Type}"/>
+                                <GridViewColumn Header="经手人" Width="100" DisplayMemberBinding="{Binding Path=People}"/>
+                                <GridViewColumn Header="时间" Width="200" DisplayMemberBinding="{Binding Path=Time}"/>
+                                <GridViewColumn Header="详细说明" Width="309" DisplayMemberBinding="{Binding Path=Detail}"/>
+
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Canvas>
+            </WMControl:WMTabItem>
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Header="公告消息">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="/Skin/Icon/ico_TraceCleaner.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Canvas>
+                    <TextBlock FontSize="14" Foreground="Black" Text="发送的用户：" Canvas.Left="77" Canvas.Top="63" Height="25" Width="81"></TextBlock>
+                    <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Height="25" Width="486" Canvas.Left="191" Canvas.Top="61" Name="senduser"></TextBox>
+                    <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Height="320" Width="486" Canvas.Left="191" Canvas.Top="125" Name="message"></TextBox>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" FontSize="14" Content="发送消息" Canvas.Left="736" Canvas.Top="61" Height="25" Width="88" Click="Button_Click_9"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" FontSize="14" Content="选择用户" Canvas.Left="746" Canvas.Top="420" Height="25" Width="88" Click="Button_Click_8"></Button>
+                    <DataGrid x:Name="dataGrid_Demo"  Grid.Row="2" Grid.Column="0" IsReadOnly="True"
+                              SelectedIndex="-1" AlternationCount="2" AlternatingRowBackground="AliceBlue"  
+                              ItemsSource="{Binding Collection}"  
+                              FrozenColumnCount="1"
+                              ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle}" 
+                              VerticalGridLinesBrush="#FFDEDEDE" HorizontalGridLinesBrush="#FFDEDEDE" 
+                              BorderBrush="#FF688CAF" Foreground="Black" RowHeight="28" RowHeaderWidth="24" 
+                              AutoGenerateColumns="False"   ColumnHeaderHeight="32" HeadersVisibility="Column"
+                            PreviewMouseLeftButtonUp="dataGrid_PreviewMouseLeftButtonUp" Canvas.Left="713" Canvas.Top="125" Height="279" 
+                              >
+                        <DataGrid.Resources>
+                            <Style x:Key="ColumnHeaderGripperStyle" TargetType="{x:Type Thumb}">
+                                <Setter Property="Width" Value="8"/>
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Cursor" Value="SizeWE"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Thumb}">
+                                            <Border Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}"/>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                            <Style x:Key="DataGridColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                <Setter Property="Background" Value="{DynamicResource AccentBrush}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource ContrastBrush}"/>
+
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn  >
+                                <DataGridTemplateColumn.Header  >
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition  />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition  Width="40" />
+                                        </Grid.ColumnDefinitions>
+                                        <CheckBox Grid.Row="0" Grid.Column="0" x:Name="CheckBox_AllSelect"  Click="CheckBox_All_SelectClick"  HorizontalAlignment="Center"></CheckBox>
+                                    </Grid>
+                                </DataGridTemplateColumn.Header>
+
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition  />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition  Width="40" />
+                                            </Grid.ColumnDefinitions>
+                                            <CheckBox Grid.Row="0" Grid.Column="0" IsChecked="{Binding Selected}"   Click="CheckBox_Click"  HorizontalAlignment="Center">
+                                            </CheckBox>
+                                        </Grid>
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Binding="{Binding ID}" Header="用户"   Width="100"   />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Canvas>
+            </WMControl:WMTabItem>
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Header="资料查询">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="/Skin/Icon/ico_SpeedupOpt.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Grid>
+
+                    <Canvas>
+                        <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Canvas.Left="32" Canvas.Top="38" Height="28" Width="646" Name="searchcon"></TextBox>
+                        <TextBlock Canvas.Left="717" Canvas.Top="88" Height="30" Width="124"  ></TextBlock>
+                        <Button Style="{StaticResource ResourceKey=MyWpfButton}" Name="B_search" Canvas.Left="717" Canvas.Top="38" Height="28" Width="124" Click="B_search_Click">搜索</Button>
+                        <Button Style="{StaticResource ResourceKey=MyWpfButton}" x:Name="B_look" Canvas.Left="577" Canvas.Top="88" Height="30" Width="101" Click="B_look_Click" Content="阅览与修改"/>
+                        <TextBlock Foreground="Black" FontSize="15" Canvas.Left="36" Canvas.Top="93" Height="30" Width="175" Name="error"  Text="选择需要查看的文件：" ></TextBlock>
+                        <ComboBox x:Name="ComboBox1" Canvas.Left="263" Canvas.Top="88" Height="30" Width="232" ItemsSource="{Binding}" DisplayMemberPath="Name" SelectedValuePath="Name"></ComboBox>
+                        <ListView x:Name="listView" Width="809" Height="329"  ItemsSource="{Binding}" Canvas.Left="32" Canvas.Top="132" MouseDoubleClick="ListView_MouseDoubleClick">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="章节名" Width="200" DisplayMemberBinding="{Binding Path=Fname}"/>
+                                    <GridViewColumn Header="行" Width="100" DisplayMemberBinding="{Binding Path=Line}"/>
+                                    <GridViewColumn Header="列" Width="100" DisplayMemberBinding="{Binding Path=Ch}"/>
+                                    <GridViewColumn Header="路径" Width="400" DisplayMemberBinding="{Binding Path=Name}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </Canvas>
+                </Grid>
+            </WMControl:WMTabItem>
+            <WMControl:WMTabItem Width="80" Height="75" Foreground="White" Header="高级管理" Name="GJ">
+                <WMControl:WMTabItem.Background>
+                    <ImageBrush ImageSource="/Skin/Icon/ico_softmgr.png"/>
+                </WMControl:WMTabItem.Background>
+                <WMControl:WMTabItem.MyMoverBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/mover.png"/>
+                </WMControl:WMTabItem.MyMoverBrush>
+                <WMControl:WMTabItem.MyEnterBrush>
+                    <ImageBrush ImageSource="/Skin/Bd/enter.png"/>
+                </WMControl:WMTabItem.MyEnterBrush>
+                <Canvas>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" Content="TEST" Click="Button_Click" Canvas.Left="206" Canvas.Top="104" Height="60" Width="261" Visibility="Collapsed"></Button>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" FontSize="15"  Content="更新" Canvas.Left="638" Canvas.Top="104" Height="32" Width="80" Click="Button_Click_27"/>
+                    <TextBlock Height="35" Canvas.Left="843" Canvas.Top="457"><Hyperlink Click="TB_refister"  x:Name="WPF" NavigateUri="register.xaml">注册账号</Hyperlink></TextBlock>
+                    <Button Style="{StaticResource ResourceKey=MyWpfButton}" FontSize="15" Content="建立索引" Click="MakeIdex_Click" Canvas.Left="412" Canvas.Top="104" Height="32" Width="96"></Button>
+                    <TextBlock Foreground="Black" FontSize="15" Text="输入需要建立索引或更新的目录" Canvas.Left="132" Canvas.Top="49"/>
+                    <TextBox Style="{StaticResource ResourceKey=TextBoxStyle1}" Name="test" Canvas.Left="356" Canvas.Top="43" Height="32" Width="406"></TextBox>
+                </Canvas>
+            </WMControl:WMTabItem>
+
+        </WMControl:WMTabControl>
+        <Label Content="校园组织资金物资资料管理系统" HorizontalAlignment="Left" Margin="5,0,0,0" VerticalAlignment="Top" Foreground="White" FontSize="11"/>
+        <TextBlock Grid.Row="1" VerticalAlignment="Top"  Foreground="White" HorizontalAlignment="Right"  Height="25" Width="170"  Margin="0,49.6,15.8,0" Name="username">用户名</TextBlock>
+
+        <WMControl:WMButton HorizontalAlignment="Right" Width="27" Margin="0,0,4.8,0.4" Click="WMButton_Click_4">
+            <WMControl:WMButton.MyMoverBrush>
+                <ImageBrush ImageSource="/Skin/Button/xm.png"/>
+            </WMControl:WMButton.MyMoverBrush>
+            <WMControl:WMButton.MyEnterBrush>
+                <ImageBrush ImageSource="/Skin/Button/xe.png"/>
+            </WMControl:WMButton.MyEnterBrush>
+            <WMControl:WMButton.Background>
+                <ImageBrush ImageSource="/Skin/Button/xn.png"/>
+            </WMControl:WMButton.Background>
+        </WMControl:WMButton>
+
+        <WMControl:WMButton HorizontalAlignment="Right" VerticalAlignment="Top" Width="27" Height="22" Margin="0,0,33,0" Click="WMButton_Click_2">
+            <WMControl:WMButton.MyMoverBrush>
+                <ImageBrush ImageSource="/Skin/Button/mim.png"/>
+            </WMControl:WMButton.MyMoverBrush>
+            <WMControl:WMButton.MyEnterBrush>
+                <ImageBrush ImageSource="/Skin/Button/mie.png"/>
+            </WMControl:WMButton.MyEnterBrush>
+            <WMControl:WMButton.Background>
+                <ImageBrush ImageSource="/Skin/Button/min.png"/>
+            </WMControl:WMButton.Background>
+        </WMControl:WMButton>
+
+
+        <RichTextBox Canvas.Left="599" Canvas.Top="313" Name="information" Margin="-1,558.6,-0.2,0" Grid.Row="1" IsReadOnly="True" ></RichTextBox>
+    </Grid>
+</Window>
